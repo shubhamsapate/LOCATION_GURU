@@ -1,0 +1,16 @@
+
+var miss=function(array1)
+{
+ var missing = new Array();
+for(var i=1;i<=array1.length;i++)
+{
+  if(array1.indexOf(i)==-1)
+  {
+    missing.push(i);
+  }
+  
+}
+
+return  missing;
+}
+console.log(miss([3,4,5,4,3,2,3,4]))
