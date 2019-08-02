@@ -1,0 +1,6 @@
+var rev=function(array)
+{
+var revarray=array.reverse();
+return revarray;
+}
+console.log("reverse array is   "+rev([7, 9, 0, 2]));
