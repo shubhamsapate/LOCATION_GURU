@@ -1,0 +1,6 @@
+function func(n) { 
+let i=n;
+i++;
+return(i);
+ } 
+ console.log(func(8))
