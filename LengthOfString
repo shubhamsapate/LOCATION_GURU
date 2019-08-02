@@ -1,0 +1,11 @@
+    function stringLength(str,count) {
+       count = count || 0;
+       if (str.length) {
+          return stringLength(str.substr(1), ++count);
+       } else {
+           return count;
+       }
+    }
+    
+    console.log(stringLength("Shubham Sapate"));
+    console.log(stringLength("873487437843"));
