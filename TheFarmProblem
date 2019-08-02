@@ -1,0 +1,9 @@
+var first =  function(hen,cow,pigs) {
+    var Hen=hen,Cow=cow,Pigs=pigs;
+    Hen=Hen*2;
+    Cow=Cow*4;
+    Pigs=Pigs*4;
+    return Hen+Cow+Pigs;
+  };
+
+console.log(first(2,3,5));
