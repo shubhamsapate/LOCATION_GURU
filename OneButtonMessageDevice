@@ -1,0 +1,11 @@
+var a1=function(txt, literal){
+    if(!literal) txt= txt.toLowerCase();
+    return txt.split('').map(function(c){
+        return 'abcdefghijklmnopqrstuvwxyz'.indexOf(c)+1 || (literal? c: '');
+    }).reduce(myFunc);
+    
+}
+function myFunc(total, num) {
+  return total + num;
+}
+console.log(a1("shubh"))
