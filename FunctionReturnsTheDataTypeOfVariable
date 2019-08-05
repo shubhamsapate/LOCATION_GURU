@@ -1,0 +1,5 @@
+ var checkData=function(data)
+ {
+ return typeof data;
+ }
+ console.log(checkData(3443))
