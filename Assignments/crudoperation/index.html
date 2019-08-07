@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>user detail</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+
+<body>
+
+
+
+    <!-- form start -->
+
+    <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+        <span class="border rounded">
+
+
+            <div class="row">
+                <div class="col-md-2">
+
+                    <input type="text" class="form-control" placeholder="ID" id="idinp" required>
+                    <label class="validation-error hide" id="fullNameValidationError"><p class="text-danger" maxlength="20"></p></label>
+
+                </div>
+
+                <div class="col-md-2">
+
+                    <input type="text" class="form-control" placeholder="First name" id="fname" required>
+                    <label class="validation-error hide" id="fullNameValidationError"><p class="text-danger" maxlength="20"></p></label>
+
+                </div>
+                <div class="col-md-2">
+                    <input type="text" class="form-control" placeholder="Last name" id="lname" required>
+                    <label class="validation-error hide" id="fullNameValidationError"><p class="text-danger" maxlength="20"></p>.</label>
+
+                </div>
+                <div class="col-md-2">
+                    <input type="text" class="form-control" placeholder="Contact Number" id="cnumber" maxlength="12" required>
+                    <label class="validation-error hide" id="fullNameValidationError"><p class="text-danger"></p></label>
+                </div>
+                <div class="col-md-2">
+
+                        <select id="genderinp" class="form-control" placeholder="Select Gender">
+                            <option disabled selected>Select Gender</option>    
+                            <option selected>Male</option>
+                                <option>Female</option>
+                                <option>other</option>
+                              </select>
+<!-- 
+                    <input type="text" class="form-control" placeholder="Gender" id="genderinp" required>
+                    <label class="validation-error hide" id="fullNameValidationError"><p class="text-danger" maxlength="20" ></p></label> -->
+
+                </div>
+                <div class="col-md-2">
+
+                        <select id="ncode" class="form-control">
+                                <option disabled selected>National Code</option>
+                                <option>+92</option>
+                                <option>+93</option>
+                                <option>+94</option>
+                              </select>
+
+                    <!-- <input type="text" class="form-control" placeholder="National Code" id="ncode" required> -->
+                </div>
+
+
+
+            </div>
+            <!-- button -->
+            <div class="row justify-content-center">
+
+                <button type="submit" class="btn btn-danger " style="margin-bottom: 30px;padding-left: 30px;padding-right: 30px">Add</button>
+
+            </div>
+        </span>
+        <div class="table-responsive">
+            <td>
+                <table class="table table-striped" id="userList">
+                    <thead class="bg-danger text-white">
+                        <tr>
+                            <th scope="col">ID</th>
+                            <th scope="col">Gender</th>
+                            <th scope="col">First Name</th>
+                            <th scope="col">Last Name</th>
+                            <th scope="col">Mobile Number</th>
+                            <th scope="col">National Code</th>
+                            <th scope="col">Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody style="overflow-y: scroll">
+                    </tbody>
+                </table>
+
+
+    </form>
+
+
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+    <!-- <script src="js/pagination.js"></script> -->
+</body>
+
+</html>
